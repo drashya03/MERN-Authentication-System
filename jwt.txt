@@ -1,0 +1,16 @@
+JWT
+=> stateless
+=> encrypted token
+
+3 part token 
+
+=> two resources talking to each other
+
+Authentication
+=>  first time info given
+ vs
+authorization
+=> resource access
+
+use case: auth,autho,
+how to invalid jwt : give timeout
