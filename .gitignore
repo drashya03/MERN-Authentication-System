@@ -1,14 +1,5 @@
 # Node modules
 node_modules/
-client/node_modules/
-server/node_modules/
-
-# Build output
-dist/
-build/
-client/dist/
-dist-ssr/
-client/dist-ssr/
 
 # Environment variables
 .env
@@ -18,29 +9,3 @@ server/.env
 .env.production
 .env.development
 *.local
-
-# Logs
-logs/
-*.log
-debug.log
-
-# Editor folders
-.vscode/
-*.swp
-.sw?
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Coverage / test artifacts
-coverage/
-
-# Project files
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-
-
