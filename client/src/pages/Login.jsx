@@ -21,8 +21,6 @@ const Login = () => {
     const onSubmitHandler = async (e)=> {
         e.preventDefault();
         try {
-        
-
          axios.defaults.withCredentials = true
         //  e.preventDefault();
          if(state === 'Sign Up'){
@@ -126,9 +124,6 @@ const Login = () => {
           </span>
         </p>
         )}
-       
-
-     
       </div>
     </div>
   );

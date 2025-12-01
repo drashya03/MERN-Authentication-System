@@ -42,6 +42,14 @@ export const register = async (req, res) => {
       sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
+  //      const isProduction = process.env.NODE_ENV === 'production';
+  //  res.cookie('token', token, {
+  //    httpOnly: true,
+  //    secure: isProduction,
+  //    sameSite: isProduction ? 'none' : 'lax',
+  //    maxAge: 7 * 24 * 60 * 60 * 1000,
+  //  });
+
 
     // send email
     const mailOptions = {
@@ -93,9 +101,18 @@ export const login = async (req, res) => {
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
+  //      const isProduction = process.env.NODE_ENV === 'production';
+  //  res.cookie('token', token, {
+  //    httpOnly: true,
+  //    secure: isProduction,
+  //    sameSite: isProduction ? 'none' : 'lax',
+  //    maxAge: 7 * 24 * 60 * 60 * 1000,
+  //  });
+
     return res.json({ success: true });
   } catch (error) {
     return res.json({ success: false, message: error.message });
+
   }
 };
 
@@ -190,6 +207,7 @@ export const isAuthenticated = async (req, res) => {
   try {
     return res.json({ success: true });
   } catch (error) {
+    
     res.json({ success: false, message: error.message });
   }
 };
